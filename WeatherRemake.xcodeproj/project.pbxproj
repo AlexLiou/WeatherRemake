@@ -17,6 +17,9 @@
 		797CFF2F28625C80000FC2A1 /* Color-Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF2E28625C80000FC2A1 /* Color-Custom.swift */; };
 		797CFF3128625DB0000FC2A1 /* Array-GradientStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF3028625DB0000FC2A1 /* Array-GradientStop.swift */; };
 		797CFF3328626024000FC2A1 /* Color-Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF3228626024000FC2A1 /* Color-Interpolation.swift */; };
+		797CFF3528639C9A000FC2A1 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF3428639C9A000FC2A1 /* Star.swift */; };
+		797CFF3728639CC7000FC2A1 /* StarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF3628639CC7000FC2A1 /* StarField.swift */; };
+		797CFF3928639E94000FC2A1 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF3828639E94000FC2A1 /* StarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		797CFF2E28625C80000FC2A1 /* Color-Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Custom.swift"; sourceTree = "<group>"; };
 		797CFF3028625DB0000FC2A1 /* Array-GradientStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array-GradientStop.swift"; sourceTree = "<group>"; };
 		797CFF3228626024000FC2A1 /* Color-Interpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Interpolation.swift"; sourceTree = "<group>"; };
+		797CFF3428639C9A000FC2A1 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		797CFF3628639CC7000FC2A1 /* StarField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarField.swift; sourceTree = "<group>"; };
+		797CFF3828639E94000FC2A1 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				793312BC28612D660048ABD7 /* WeatherRemakeApp.swift */,
-				793312BE28612D660048ABD7 /* ContentView.swift */,
-				797CFF3228626024000FC2A1 /* Color-Interpolation.swift */,
-				797CFF3028625DB0000FC2A1 /* Array-GradientStop.swift */,
-				797CFF2E28625C80000FC2A1 /* Color-Custom.swift */,
-				797CFF282861439F000FC2A1 /* Cloud.swift */,
-				797CFF2A2861442A000FC2A1 /* CloudGroup.swift */,
-				797CFF2C28614863000FC2A1 /* CloudsView.swift */,
+				797CFF3A28639EF5000FC2A1 /* Views */,
+				797CFF3C28639F0B000FC2A1 /* Extensions */,
+				797CFF3B28639F03000FC2A1 /* Models */,
 				793312C028612D690048ABD7 /* Assets.xcassets */,
 				793312C228612D690048ABD7 /* Preview Content */,
 			);
@@ -83,6 +85,37 @@
 				793312C328612D690048ABD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		797CFF3A28639EF5000FC2A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				793312BE28612D660048ABD7 /* ContentView.swift */,
+				797CFF3828639E94000FC2A1 /* StarView.swift */,
+				797CFF2C28614863000FC2A1 /* CloudsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		797CFF3B28639F03000FC2A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				797CFF282861439F000FC2A1 /* Cloud.swift */,
+				797CFF3428639C9A000FC2A1 /* Star.swift */,
+				797CFF3628639CC7000FC2A1 /* StarField.swift */,
+				797CFF2A2861442A000FC2A1 /* CloudGroup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		797CFF3C28639F0B000FC2A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				797CFF3228626024000FC2A1 /* Color-Interpolation.swift */,
+				797CFF3028625DB0000FC2A1 /* Array-GradientStop.swift */,
+				797CFF2E28625C80000FC2A1 /* Color-Custom.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,12 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797CFF3528639C9A000FC2A1 /* Star.swift in Sources */,
 				797CFF3328626024000FC2A1 /* Color-Interpolation.swift in Sources */,
 				793312BF28612D660048ABD7 /* ContentView.swift in Sources */,
 				797CFF292861439F000FC2A1 /* Cloud.swift in Sources */,
 				797CFF2F28625C80000FC2A1 /* Color-Custom.swift in Sources */,
 				793312BD28612D660048ABD7 /* WeatherRemakeApp.swift in Sources */,
+				797CFF3728639CC7000FC2A1 /* StarField.swift in Sources */,
 				797CFF3128625DB0000FC2A1 /* Array-GradientStop.swift in Sources */,
+				797CFF3928639E94000FC2A1 /* StarView.swift in Sources */,
 				797CFF2B2861442A000FC2A1 /* CloudGroup.swift in Sources */,
 				797CFF2D28614863000FC2A1 /* CloudsView.swift in Sources */,
 			);

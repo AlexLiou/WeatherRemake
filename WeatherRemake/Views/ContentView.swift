@@ -17,6 +17,11 @@ struct ContentView: View {
         return advanced.formatted(date: .omitted, time: .shortened)
     }
 
+    var starOpacity: Double {
+        let color = starStops.interpolated(amount: time)
+        return color.getComponents().alpha
+    }
+
     let backgroundTopStops: [Gradient.Stop] = [
         .init(color: .midnightStart, location: 0),
         .init(color: .midnightStart, location: 0.25),
@@ -39,9 +44,44 @@ struct ContentView: View {
         .init(color: .midnightEnd, location: 1)
     ]
 
+    let cloudTopStops: [Gradient.Stop] = [
+        .init(color: .darkCloudStart, location: 0),
+        .init(color: .darkCloudStart, location: 0.25),
+        .init(color: .sunriseCloudStart, location: 0.33),
+        .init(color: .lightCloudStart, location: 0.38),
+        .init(color: .lightCloudStart, location: 0.7),
+        .init(color: .sunsetCloudStart, location: 0.78),
+        .init(color: .darkCloudStart, location: 0.82),
+        .init(color: .darkCloudStart, location: 1)
+    ]
+
+    let cloudBottomStops: [Gradient.Stop] = [
+        .init(color: .darkCloudEnd, location: 0),
+        .init(color: .darkCloudEnd, location: 0.25),
+        .init(color: .sunriseCloudEnd, location: 0.33),
+        .init(color: .lightCloudEnd, location: 0.38),
+        .init(color: .lightCloudEnd, location: 0.7),
+        .init(color: .sunsetCloudEnd, location: 0.78),
+        .init(color: .darkCloudEnd, location: 0.82),
+        .init(color: .darkCloudEnd, location: 1)
+    ]
+
+    let starStops: [Gradient.Stop] = [
+        .init(color: .white, location: 0),
+        .init(color: .white, location: 0.25),
+        .init(color: .clear, location: 0.333),
+        .init(color: .clear, location: 0.38),
+        .init(color: .clear, location: 0.7),
+        .init(color: .clear, location: 0.8),
+        .init(color: .white, location: 0.85),
+        .init(color: .white, location: 1)
+    ]
+
     var body: some View {
         ZStack {
-            CloudsView(thickness: cloudThickness)
+            StarView()
+                .opacity(starOpacity)
+            CloudsView(thickness: cloudThickness, topTint: cloudTopStops.interpolated(amount: time), bottomTint: cloudBottomStops.interpolated(amount: time))
         }
         .preferredColorScheme(.dark)
         .background(
