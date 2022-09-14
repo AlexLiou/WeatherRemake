@@ -11,6 +11,9 @@
 		793312BF28612D660048ABD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793312BE28612D660048ABD7 /* ContentView.swift */; };
 		793312C128612D690048ABD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793312C028612D690048ABD7 /* Assets.xcassets */; };
 		793312C428612D690048ABD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793312C328612D690048ABD7 /* Preview Assets.xcassets */; };
+		797173C42864D27500F0A3CD /* Storm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797173C32864D27500F0A3CD /* Storm.swift */; };
+		797173C62864D29D00F0A3CD /* StormDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797173C52864D29D00F0A3CD /* StormDrop.swift */; };
+		797173C82864DFF700F0A3CD /* StormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797173C72864DFF700F0A3CD /* StormView.swift */; };
 		797CFF292861439F000FC2A1 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF282861439F000FC2A1 /* Cloud.swift */; };
 		797CFF2B2861442A000FC2A1 /* CloudGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF2A2861442A000FC2A1 /* CloudGroup.swift */; };
 		797CFF2D28614863000FC2A1 /* CloudsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CFF2C28614863000FC2A1 /* CloudsView.swift */; };
@@ -28,6 +31,9 @@
 		793312BE28612D660048ABD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		793312C028612D690048ABD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		793312C328612D690048ABD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		797173C32864D27500F0A3CD /* Storm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storm.swift; sourceTree = "<group>"; };
+		797173C52864D29D00F0A3CD /* StormDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormDrop.swift; sourceTree = "<group>"; };
+		797173C72864DFF700F0A3CD /* StormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormView.swift; sourceTree = "<group>"; };
 		797CFF282861439F000FC2A1 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		797CFF2A2861442A000FC2A1 /* CloudGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGroup.swift; sourceTree = "<group>"; };
 		797CFF2C28614863000FC2A1 /* CloudsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsView.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 			children = (
 				793312BE28612D660048ABD7 /* ContentView.swift */,
 				797CFF3828639E94000FC2A1 /* StarView.swift */,
+				797173C72864DFF700F0A3CD /* StormView.swift */,
 				797CFF2C28614863000FC2A1 /* CloudsView.swift */,
 			);
 			path = Views;
@@ -102,6 +109,8 @@
 			children = (
 				797CFF282861439F000FC2A1 /* Cloud.swift */,
 				797CFF3428639C9A000FC2A1 /* Star.swift */,
+				797173C32864D27500F0A3CD /* Storm.swift */,
+				797173C52864D29D00F0A3CD /* StormDrop.swift */,
 				797CFF3628639CC7000FC2A1 /* StarField.swift */,
 				797CFF2A2861442A000FC2A1 /* CloudGroup.swift */,
 			);
@@ -188,10 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797173C62864D29D00F0A3CD /* StormDrop.swift in Sources */,
 				797CFF3528639C9A000FC2A1 /* Star.swift in Sources */,
 				797CFF3328626024000FC2A1 /* Color-Interpolation.swift in Sources */,
 				793312BF28612D660048ABD7 /* ContentView.swift in Sources */,
+				797173C42864D27500F0A3CD /* Storm.swift in Sources */,
 				797CFF292861439F000FC2A1 /* Cloud.swift in Sources */,
+				797173C82864DFF700F0A3CD /* StormView.swift in Sources */,
 				797CFF2F28625C80000FC2A1 /* Color-Custom.swift in Sources */,
 				793312BD28612D660048ABD7 /* WeatherRemakeApp.swift in Sources */,
 				797CFF3728639CC7000FC2A1 /* StarField.swift in Sources */,
